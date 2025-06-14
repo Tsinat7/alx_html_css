@@ -1,194 +1,142 @@
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body style */
+/* Global Styles */
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #222;
 }
 
-/* Header styles */
-header {
-  background-color: #007bff;
-  padding: 20px 0;
-  margin-bottom: 40px;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-header ul li a {
-  color: white;
+a {
+  color: #007acc;
   text-decoration: none;
-  font-weight: 600;
 }
 
-header ul li a:hover {
+a:hover {
   text-decoration: underline;
 }
 
+/* Header */
+header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
 /* Banner Section */
-.banner {
+#banner {
+  background-color: #e0f7fa;
   text-align: center;
-  padding: 40px 20px;
-  background-color: white;
-  margin-bottom: 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 4rem 2rem;
 }
 
-.banner h1 {
-  font-size: 2.5em;
-  margin-bottom: 15px;
+#banner h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-.banner p {
-  font-size: 1.2em;
-  margin-bottom: 25px;
+#banner p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 25px;
+#banner a {
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
   border-radius: 5px;
-  text-decoration: none;
   font-weight: 600;
 }
 
-.btn:hover {
-  background-color: #0056b3;
-}
-
 /* Projects Section */
-.projects {
+#projects {
+  padding: 3rem 2rem;
+  background-color: #fff;
   max-width: 900px;
-  margin: 0 auto 40px;
-  background-color: white;
-  padding: 30px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 0 auto;
 }
 
-.projects h2 {
+#projects h2 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 2em;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
-.project-item {
-  margin-bottom: 25px;
+#projects article {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
 }
 
-.project-item h3 {
-  color: #007bff;
-  margin-bottom: 8px;
+#projects h3 {
+  margin-top: 0;
 }
 
-.project-item p {
-  margin-bottom: 10px;
+#projects p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Blog Section */
-.blog {
-  max-width: 900px;
-  margin: 0 auto 40px;
-  background-color: white;
-  padding: 30px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+#blog {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
-.blog h2 {
+#blog h2 {
   text-align: center;
-  margin-bottom: 25px;
-  font-size: 2em;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
-/* FAQ Section */
-.faq {
-  background-color: white;
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.faq h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2em;
-  color: #333;
-}
-
-.faq-item {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
-}
-
-.faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  text-align: left;
-  font-size: 1.1em;
-  padding: 15px;
-  cursor: pointer;
-  position: relative;
-  color: #007bff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faq-question:hover {
-  background-color: #f0f0f0;
-}
-
-.faq-answer {
-  padding: 0 15px 15px 15px;
-  color: #555;
-  font-size: 1em;
+#blog p {
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
-/* Arrow rotation when expanded */
-.faq-question[aria-expanded="true"] .arrow {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-
 /* Contact Section */
-.contact {
-  max-width: 900px;
-  margin: 0 auto 40px;
-  background-color: white;
-  padding: 30px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+#contact {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-.contact h2 {
+#contact h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 2em;
+  margin-bottom: 1rem;
 }
 
-.contact p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
+#contact p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
   text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-top: 1px solid #444;
+  margin-top: 3rem;
 }
