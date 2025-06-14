@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tsinat Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header>
-    <div class="container">
-      <h1>Tsinat Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about" class="banner">
-    <div class="container">
-      <h2>Hi, I'm Tsinat</h2>
-      <p>I'm a mathematician and aspiring Front-End Developer. I love solving problems.</p>
-      <a href="#" class="button">Download Resume</a>
-    </div>
+  <section class="banner">
+    <h1>Hi, I'm Tsinat</h1>
+    <p>I'm a mathematician and aspiring Front-end developer. I love solving problems.</p>
+    <a href="#">Download Resume</a>
   </section>
 
   <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Time Table Generator</h3>
-        <p>A fun app that lets kids generate and practice multiplication tables.</p>
-        <a href="#">View More</a>
-      </div>
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>My personal portfolio website built using Figma and translated to HTML/CSS.</p>
-        <a href="#">View More</a>
-      </div>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Time Table Generator</h3>
+      <p>A fun app that lets kids generate and practice multiplication tables.</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>My personal portfolio website built using Figma and translated to HTML/CSS.</p>
     </div>
   </section>
 
   <section id="blog" class="blog">
-    <div class="container">
-      <h2>Blog</h2>
+    <h2>Blog</h2>
+    <article>
       <h3>Starting Front-End Development</h3>
-      <p>I share my journey from being a math teacher to a front-end developer, and how I use both skill sets to build meaningful tools.</p>
-    </div>
+      <p>I share my personal journey from being a math teacher to becoming a front-end developer, and how I use both skill sets to build meaningful tools.</p>
+    </article>
+  </section>
+
+  <section class="quote">
+    <blockquote>
+      "The best way to predict the future is to invent it." – Alan Kay
+    </blockquote>
   </section>
 
   <section class="videos">
-    <div class="container">
-      <h2>My Front-End Video</h2>
-      <video width="600" controls>
-        <source src="videos/my_work.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+    <h2>My Work</h2>
+    <video controls width="400">
+      <source src="videos/my_work.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- ✅ Membership Section -->
+  <section class="membership">
+    <h2>Join the Community</h2>
+    <p>Get updates, access to new projects, and insights on front-end development.</p>
+    <form class="membership-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
 
   <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Name: Tsinat Weldeslasie</p>
-      <p>Email: tsnat100@gmail.com</p>
-    </div>
+    <h2>Contact</h2>
+    <p>Name: Tsinat Weldeslasie</p>
+    <p>Email: tsnat100@gmail.com</p>
   </section>
 
 </body>

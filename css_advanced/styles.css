@@ -1,76 +1,63 @@
 /* General Reset */
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
   line-height: 1.6;
-  color: #333;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+  background-color: #ffffff;
 }
 
 /* Header */
 header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px 0;
-}
-
-header h1 {
-  margin: 0;
-  text-align: center;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  gap: 30px;
+  margin: 0;
   padding: 0;
-  margin: 10px 0 0 0;
-}
-
-nav li {
-  margin: 0 15px;
 }
 
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
 /* Banner */
 .banner {
-  background: #f0f0f0;
+  background-color: #f4f4f4;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
-.banner h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+.banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
 }
 
 .banner p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 1.2em;
+  margin-bottom: 25px;
 }
 
-.button {
+.banner a {
   display: inline-block;
-  background: #4CAF50;
-  color: white;
   padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
 /* Projects */
 .projects {
-  background: #fff;
-  padding: 40px 20px;
+  padding: 50px 20px;
+  background-color: #fff;
 }
 
 .projects h2 {
@@ -79,37 +66,100 @@ nav a {
 }
 
 .project {
-  background: #f9f9f9;
-  padding: 20px;
   margin-bottom: 20px;
-  border-left: 5px solid #4CAF50;
+  padding: 15px;
+  border: 1px solid #ddd;
 }
 
 /* Blog */
 .blog {
-  background: #eef;
-  padding: 40px 20px;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
 }
 
 .blog h2 {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Quote */
+.quote {
+  background-color: #eee;
+  padding: 40px 20px;
+  font-style: italic;
+  text-align: center;
+  color: #555;
 }
 
 /* Videos */
 .videos {
-  background: #fff;
+  padding: 50px 20px;
   text-align: center;
-  padding: 40px 20px;
+}
+
+.videos h2 {
+  margin-bottom: 20px;
 }
 
 .videos video {
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* ✅ Membership Section */
+.membership {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 60px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.membership h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.membership p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.membership-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.membership-form input[type="email"] {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 250px;
+  font-size: 1em;
+}
+
+.membership-form button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membership-form button:hover {
+  background-color: #0056b3;
 }
 
 /* Contact */
 .contact {
-  background: #f0f0f0;
   padding: 40px 20px;
   text-align: center;
 }
