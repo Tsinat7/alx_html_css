@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tsinat Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <nav>
       <ul>
@@ -19,61 +20,54 @@
     </nav>
   </header>
 
+  <!-- Banner Section -->
   <section class="banner">
     <h1>Hi, I'm Tsinat</h1>
     <p>I'm a mathematician and aspiring Front-end developer. I love solving problems.</p>
-    <a href="#">Download Resume</a>
+    <a href="resume.pdf" class="btn">Download Resume</a>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="projects">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="project-item">
       <h3>Time Table Generator</h3>
       <p>A fun app that lets kids generate and practice multiplication tables.</p>
+      <a href="#" class="btn">View More</a>
     </div>
-    <div class="project">
+    <div class="project-item">
       <h3>Portfolio Website</h3>
       <p>My personal portfolio website built using Figma and translated to HTML/CSS.</p>
+      <a href="#" class="btn">View More</a>
     </div>
   </section>
 
+  <!-- Blog Section -->
   <section id="blog" class="blog">
     <h2>Blog</h2>
-    <article>
-      <h3>Starting Front-End Development</h3>
-      <p>I share my personal journey from being a math teacher to becoming a front-end developer, and how I use both skill sets to build meaningful tools.</p>
-    </article>
+    <p>I share my personal journey from being a math teacher to becoming a front-end developer, and how I use both skill sets to build meaningful tools.</p>
   </section>
 
-  <section class="quote">
-    <blockquote>
-      "The best way to predict the future is to invent it." – Alan Kay
-    </blockquote>
-  </section>
-
-  <section class="videos">
-    <h2>My Work</h2>
-    <video controls width="400">
-      <source src="videos/my_work.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-
-  <!-- ✅ Membership Section -->
-  <section class="membership">
-    <h2>Join the Community</h2>
-    <p>Get updates, access to new projects, and insights on front-end development.</p>
-    <form class="membership-form">
-      <input type="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Name: Tsinat Weldeslasie</p>
-    <p>Email: tsnat100@gmail.com</p>
-  </section>
-
-</body>
-</html>
+  <!-- FAQ Section -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        What is the purpose of this portfolio?
+        <span class="arrow">&#9660;</span>
+      </button>
+      <div class="faq-answer" hidden>
+        This portfolio showcases my projects and journey as a mathematician turned front-end developer.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false">
+        How can I contact you?
+        <span class="arrow">&#9660;</span>
+      </button>
+      <div class="faq-answer" hidden>
+        You can contact me via the contact section or email me at tsnat100@gmail.com.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"
