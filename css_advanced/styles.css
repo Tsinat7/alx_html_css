@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
@@ -7,87 +7,96 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f9f9f9;
-  color: #1a1a1a;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
 }
 
-/* Header styles */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
 header {
-  background-color: white;
+  background-color: #007acc;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
-.logo h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #007acc;
-  font-weight: 700;
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
-nav ul li a:hover {
-  color: #007acc;
+header nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Banner Section */
-section.banner {
-  background-color: #e9f0fb;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 400px;
-  padding: 60px 40px;
-  border-radius: 8px;
-  margin: 40px auto;
-  max-width: 900px;
+.banner {
+  background-color: #f9f9f9;
+  padding: 80px 30px;
+  text-align: center;
 }
 
-section.banner h1 {
-  font-family: 'Spin Cycle', cursive;
-  font-size: 3rem;
-  color: #0d3c78;
-  margin-bottom: 20px;
+.banner h2 {
+  font-size: 2.5rem;
+  color: #007acc;
 }
 
-section.banner p {
-  font-size: 1.3rem;
-  color: #2e2e2e;
-  max-width: 600px;
-  line-height: 1.5;
+.banner p {
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
-section.banner button {
-  margin-top: 30px;
-  padding: 12px 28px;
-  font-size: 1.1rem;
+.btn {
+  display: inline-block;
   background-color: #007acc;
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-section.banner button:hover {
-  background-color: #005a9c;
+.btn:hover {
+  background-color: #005e99;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #f0f4f8;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.quote blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  border-left: 5px solid #007acc;
+  padding-left: 20px;
 }

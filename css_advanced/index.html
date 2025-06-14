@@ -2,35 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tsinat Portfolio</title>
-  <!-- Link to your CSS file -->
   <link rel="stylesheet" href="styles.css" />
-  <!-- Fonts (optional, add if you want the same fonts as Figma) -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <div class="logo">
-      <h2>Tsinat Portfolio</h2>
+    <div class="container">
+      <h1 class="logo">Tsinat Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
+  <!-- Banner / Hero Section -->
   <section class="banner">
-    <h1>Hi, I'm Tsinat</h1>
-    <p>I'm a mathematician and aspiring Front end developer. I love solving problems.</p>
-    <button>Download Resume</button>
+    <div class="container">
+      <h2>Hi, I'm Tsinat</h2>
+      <p>I'm a mathematician and aspiring Front-End Developer. I love solving problems.</p>
+      <a href="#" class="btn">Download Resume</a>
+    </div>
   </section>
 
-  <!-- Other sections can go here -->
+  <!-- Quote Section -->
+  <section class="quote">
+    <blockquote>
+      “I share my personal journey from being a math teacher to becoming a front end developer, and how I use both skill sets to build meaningful tools.”
+    </blockquote>
+  </section>
 
+  <!-- (Next Sections: Projects, Blog, Contact) -->
+  
 </body>
 </html>
