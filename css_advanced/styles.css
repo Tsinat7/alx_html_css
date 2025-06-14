@@ -1,102 +1,115 @@
-/* Reset some defaults */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Reset */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fff;
   color: #333;
 }
 
 .container {
-  width: 90%;
-  max-width: 1100px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header */
 header {
-  background-color: #007acc;
+  background-color: #4CAF50;
   color: white;
   padding: 20px 0;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header h1 {
+  margin: 0;
+  text-align: center;
 }
 
-header .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-header nav ul {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
-header nav ul li a {
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Banner Section */
+/* Banner */
 .banner {
-  background-color: #f9f9f9;
-  padding: 80px 30px;
+  background: #f0f0f0;
   text-align: center;
+  padding: 60px 20px;
 }
 
 .banner h2 {
-  font-size: 2.5rem;
-  color: #007acc;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .banner p {
-  font-size: 1.2rem;
-  margin: 20px 0;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.btn {
+.button {
   display: inline-block;
-  background-color: #007acc;
+  background: #4CAF50;
   color: white;
-  padding: 12px 25px;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
 }
 
-.btn:hover {
-  background-color: #005e99;
+/* Projects */
+.projects {
+  background: #fff;
+  padding: 40px 20px;
 }
 
-/* Quote Section */
-.quote {
-  background-color: #f0f4f8;
-  padding: 60px 30px;
+.projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #4CAF50;
+}
+
+/* Blog */
+.blog {
+  background: #eef;
+  padding: 40px 20px;
+}
+
+.blog h2 {
   text-align: center;
 }
 
-.quote blockquote {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-  border-left: 5px solid #007acc;
-  padding-left: 20px;
+/* Videos */
+.videos {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.videos video {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Contact */
+.contact {
+  background: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
 }

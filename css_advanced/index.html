@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Tsinat Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <div class="container">
-      <h1 class="logo">Tsinat Portfolio</h1>
+      <h1>Tsinat Portfolio</h1>
       <nav>
         <ul>
           <li><a href="#about">About Me</a></li>
@@ -23,23 +21,55 @@
     </div>
   </header>
 
-  <!-- Banner / Hero Section -->
-  <section class="banner">
+  <section id="about" class="banner">
     <div class="container">
       <h2>Hi, I'm Tsinat</h2>
       <p>I'm a mathematician and aspiring Front-End Developer. I love solving problems.</p>
-      <a href="#" class="btn">Download Resume</a>
+      <a href="#" class="button">Download Resume</a>
     </div>
   </section>
 
-  <!-- Quote Section -->
-  <section class="quote">
-    <blockquote>
-      “I share my personal journey from being a math teacher to becoming a front end developer, and how I use both skill sets to build meaningful tools.”
-    </blockquote>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Time Table Generator</h3>
+        <p>A fun app that lets kids generate and practice multiplication tables.</p>
+        <a href="#">View More</a>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio website built using Figma and translated to HTML/CSS.</p>
+        <a href="#">View More</a>
+      </div>
+    </div>
   </section>
 
-  <!-- (Next Sections: Projects, Blog, Contact) -->
-  
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2>Blog</h2>
+      <h3>Starting Front-End Development</h3>
+      <p>I share my journey from being a math teacher to a front-end developer, and how I use both skill sets to build meaningful tools.</p>
+    </div>
+  </section>
+
+  <section class="videos">
+    <div class="container">
+      <h2>My Front-End Video</h2>
+      <video width="600" controls>
+        <source src="videos/my_work.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Name: Tsinat Weldeslasie</p>
+      <p>Email: tsnat100@gmail.com</p>
+    </div>
+  </section>
+
 </body>
 </html>
