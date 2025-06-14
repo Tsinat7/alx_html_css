@@ -1,3 +1,93 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: lightblue;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+
+/* Header styles */
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #007acc;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007acc;
+}
+
+/* Banner Section */
+section.banner {
+  background-color: #e9f0fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 400px;
+  padding: 60px 40px;
+  border-radius: 8px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+section.banner h1 {
+  font-family: 'Spin Cycle', cursive;
+  font-size: 3rem;
+  color: #0d3c78;
+  margin-bottom: 20px;
+}
+
+section.banner p {
+  font-size: 1.3rem;
+  color: #2e2e2e;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+section.banner button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section.banner button:hover {
+  background-color: #005a9c;
 }
