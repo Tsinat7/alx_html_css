@@ -1,14 +1,16 @@
 # Headphones Landing Page
 
-This is a fully responsive landing page for a fictional headphone product. Built using only HTML and CSS.
+This is a responsive landing page designed for a headphones product brand. It was created using only HTML and CSS.
 
 ## Features
-- Fully responsive (mobile-first)
-- Semantic HTML5 structure
-- Clean design inspired by Figma
 
-## How to Run
-Open index.html in your browser or use Live Server in VS Code.
+- Semantic HTML5 structure
+- Responsive design for mobile and desktop
+- CSS styling without any external libraries
+- Layout built to match the Figma design
 
 ## Author
-Tsinat (Tsinat7)
+
+Tsinat7
+
+&copy; 2025 Tsinat7. All rights reserved.
