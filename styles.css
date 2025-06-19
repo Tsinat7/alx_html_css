@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 1000px;
+  margin: auto;
+}
+
+a:hover, a:active {
+  color: #FF6565;
+}
+
+button:hover, button:active {
+  opacity: 0.9;
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust layout, hide/show menu, stack elements, etc. */
+}
