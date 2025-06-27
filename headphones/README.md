@@ -1,40 +1,29 @@
 # Headphones Webpage Project
 
 ## 📄 Description
-...
 
-## 🖼 Final Design Reference
-...
+This project is part of the ALX Front-End Curriculum. It involves building a fully responsive and accessible web page based on a Figma design, using only HTML and CSS.
 
-## 🎯 Project Objectives
-...
+## 🖼 Design Reference
+
+Figma Link: [Click Here](https://www.figma.com/design/1wfnGJm6kRt0im5TDRvAq7/Tsinat-Portfolio--Copy-?node-id=0-1)
 
 ## 🛠 Tech Stack
-...
 
-## 📐 Design Specifications
-...
+- HTML5
+- CSS3
+- Responsive Design
+- No JavaScript
+- No external CSS libraries
 
-## 🗂 Project Structure
-...
+## 💡 Features
 
-## 📱 Responsiveness
-
-- The layout automatically adjusts to mobile screens (≤ 480px).
-- Uses media queries and flexible layouts for fluid responsiveness.
-
-## 💡 Accessibility
-
-- Semantic HTML tags used for better screen reader support.
-- Accessible navigation and button focus styles.
-- Contrast and readability considered in styling.
+- Responsive layout (switches at ≤ 480px)
+- Hover/Active styling for links and buttons
+- Accessible and semantic markup
+- Max content width: 1000px
 
 ## 👨‍🎓 Author
 
-*Tsinat Weldeslasie  
-Front-End Developer | ALX Student  
-🌐 [GitHub](https://github.com/Tsinat7)
-
-## 📜 License
-
-This project is for educational purposes only and part of the ALX Software Engineering Program.
+*Tsinat Weldeslasie*  
+GitHub: [https://github.com/Tsinat7](https://github.com/Tsinat7)
