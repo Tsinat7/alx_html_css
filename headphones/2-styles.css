@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #FF6565;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+/* What We Do Section */
+.what-we-do {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service {
+  flex: 1 1 30%;
+  padding: 20px;
+}
+
+.service i {
+  font-size: 48px;
+  color: #FF6565;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Our Results Section */
+.our-results {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.our-results h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.result-item {
+  flex: 1 1 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h3 {
+  font-size: 2rem;
+  color: #FF6565;
+  margin-bottom: 10px;
+}
+
+.result-item p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .services,
+  .results {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service,
+  .result-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #FF6565;
+}
